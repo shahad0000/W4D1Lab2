@@ -1,7 +1,7 @@
 
 // Challenge 1
-let connectionType = "fiber";
-let speed = 500;
+let connectionType = "dsl";
+let speed = 200;
 
 if (speed < 0) {
     console.log("Invalid speed value")
@@ -28,14 +28,14 @@ if (speed < 0) {
 
 
 // Challenge 2 
-let grade = 92;
-if (90 <= grade <= 100) {
+let grade = 60;
+if (90 <= grade && grade <= 100) {
     console.log("A");
-} else if (80 <= grade <= 89) {
+} else if (80 <= grade && grade <= 89) {
     console.log("B");
-} else if (70 <= grade <= 79) {
+} else if (70 <= grade && grade <= 79) {
     console.log("C");
-} else if (60 <= grade <= 69) {
+} else if (60 <= grade && grade <= 69) {
     console.log("D");
 } else {
     console.log("F");
@@ -49,7 +49,7 @@ let extraCheese = true;
 
 if (dish === "pizza" && size === "large" && extraCheese === true) {
     console.log("Large pizza with extra cheese is ready");
-} else if (dish === "pizza" && size !== "large" && extraCheese === true) {
+} else if (size !== "large") {
     console.log("Custom pizza size selected");
 } else if (dish === "pizza" && size === "large" && extraCheese === false) {
     console.log("Pizza without extra cheese");
